@@ -1,0 +1,19 @@
+SELECT DISTINCT replacement_cost FROM film
+
+SELECT COUNT( DISTINCT replacement_cost) FROM film  
+/*
+Cevap:21
+*/
+
+
+SELECT COUNT (*) FROM film 
+WHERE title LIKE 'T%' AND
+rating = 'G'
+
+SELECT COUNT(*) FROM country
+WHERE LENGTH(country) = 5
+WHERE country LIKE '_____' 
+/* 13 */
+
+SELECT COUNT(DISTINCT city) FROM city 
+WHERE city ILIKE '%r' 
